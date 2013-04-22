@@ -1,0 +1,20 @@
+{
+    "name": "paza/cardmaker",
+    "description": "cardmaker",
+    "keywords": ["pdf", "agile", "cards"],
+    "type": "library",
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "Patrick Zahnd",
+            "email": "pazaaa@gmail.com"
+        },
+        {
+            "name": "Memi Beltrame"
+        }
+    ],
+    "require": {
+        "rev42/tFPDF": "dev-master"
+    },
+    "minimum-stability": "dev"
+}

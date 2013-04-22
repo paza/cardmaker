@@ -1,0 +1,58 @@
+{
+    "hash": "2fa73474e2b18a98229204cda9a052b6",
+    "packages": [
+        {
+            "name": "rev42/tfpdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rev42/tfpdf.git",
+                "reference": "v1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rev42/tfpdf/zipball/v1.0",
+                "reference": "v1.0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "tFPDF": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ian Back",
+                    "email": "ianb@bpm1.com"
+                }
+            ],
+            "description": "tFPDF",
+            "homepage": "http://fpdf.org/fr/script/script92.php",
+            "keywords": [
+                "pdf"
+            ],
+            "time": "2012-02-24 07:26:11"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "rev42/tfpdf": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

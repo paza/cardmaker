@@ -3,7 +3,7 @@
 if (!empty($_POST['cards'])) {
 
     define('tFPDF_FONTPATH','tfpdf/font/');
-    include("tfpdf/tfpdf.php");
+    include("vendor/autoload.php");
 
     $splitter ="\n";
     //detect "---"
