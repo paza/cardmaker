@@ -8,3 +8,9 @@ a server, php, electricity - that sort of thing.
 The software and media in the main folder are distributed under the terms of the WTF Public Licence expressed in the document LICENCE
 
 The Software and Data in the folder tfpdf is distributed under its respective licence.
+
+# SETUP
+
+```sh
+composer install
+```
