@@ -4,18 +4,35 @@
 .number {
     font-size: 20px
 }
-.content {
-    font-size: 30px;
-}
-h2 {
-    font-size: 40px;
-}
 td {
     width: 100%;
-    {% if cardsPerPage is sameas("2") %}
-    height: 49.28%;
-    {% else %}
-    height: 99%;
-    {% endif %}
 }
+
+{% if cardsPerPage is sameas("2") %}
+    .content {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .textNoHtml {
+        font-size: 40px;
+    }
+    td {
+        height: 49.28%;
+    }
+{% else %}
+    .content {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    .textNoHtml {
+        font-size: 50px;
+    }
+    td {
+        height: 99%;
+    }
+{% endif %}
 {% endblock specialCSS %}

@@ -83,7 +83,7 @@ $app->match('/cards.pdf', function(Request $request) use($app) {
     // set card numbers
     foreach ($cards as $key => &$card) {
         $card = array(
-            'text' => $card,
+            'text' => trim($card),
             'number' => ($key + 1),
         );
     }

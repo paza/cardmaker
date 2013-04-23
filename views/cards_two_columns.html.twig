@@ -1,15 +1,38 @@
 {% extends "cards_base.html.twig" %}
 
 {% block specialCSS %}
-body {
-    font-size: 12px;
+.number {
+    font-size: 12px
 }
 td {
     width: 50%;
-    {% if cardsPerPage is sameas("4") %}
-    height: 48.99%;
-    {% else %}
-    height: 24.28%;
-    {% endif %}
 }
+
+{% if cardsPerPage is sameas("4") %}
+    .content {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .textNoHtml {
+        font-size: 24px;
+    }
+    td {
+        height: 48.99%;
+    }
+{% else %}
+    .content {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .textNoHtml {
+        font-size: 20px;
+    }
+    td {
+        height: 24.28%;
+    }
+{% endif %}
 {% endblock specialCSS %}
