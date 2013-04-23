@@ -66,6 +66,11 @@
             <input type="checkbox" id="cropmark" name="cropmark" value="1">
             <label for="cropmark">cropmarks</label>
             <br /><br />
+            <label>
+                <input type="checkbox" name="html" value="1" />
+                HTML Input
+            </label>
+            <br /><br />
             <label for="alignment">Style:</label>
             <br />
             <label>
@@ -84,6 +89,6 @@
     <div class="footer">
         Source on <a href="http://github.com/paza/cardmaker">github</a>, ping <a href="http://twitter.com/bratwurstkomet">memi</a> or <a href="http://twitter.com/pazaaa">pazaaa</a> on Twitter for feedback
     </div>
-<!-- PUT JS HERE -->
-<script type="text/javascript" src="main.js"></script>
+
+    {{ analytics|raw }}
 </body>

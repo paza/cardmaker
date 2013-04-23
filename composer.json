@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "rev42/tFPDF": "dev-master",
+        "ensepar/html2pdf": "dev-master",
         "silex/silex": "1.0.*",
         "twig/twig": "1.*",
         "symfony/twig-bridge": "2.*"

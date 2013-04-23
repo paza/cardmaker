@@ -1,6 +1,115 @@
 {
-    "hash": "a0de18bd1cb418b6c27a87bf0ebceb9e",
+    "hash": "d6624da704d57cc43a7a46a66cb4deb4",
     "packages": [
+        {
+            "name": "ensepar/html2pdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tmaindron/html2pdf",
+                "reference": "89f16b0de26bc1682c40123fd117659ddb53c804"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/tmaindron/html2pdf/zipball/89f16b0de26bc1682c40123fd117659ddb53c804",
+                "reference": "89f16b0de26bc1682c40123fd117659ddb53c804",
+                "shasum": ""
+            },
+            "require": {
+                "ensepar/tcpdf": "5.0.002",
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": [
+
+    ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "HTML2PDF": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Spipu",
+                    "homepage": "http://sourceforge.net/users/spipu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "tmaindron",
+                    "homepage": "http://www.github.com/tmaindron",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Unofficial fork of 'html2pdf' with Composer support. (Fixed composer dependency problem)",
+            "homepage": "https://github.com/jwronsky/html2pdf",
+            "keywords": [
+                "html",
+                "html2pdf",
+                "pdf"
+            ],
+            "time": "2012-10-09 19:45:26"
+        },
+        {
+            "name": "ensepar/tcpdf",
+            "version": "5.0.002",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tmaindron/tcpdf",
+                "reference": "5.0.002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/tmaindron/tcpdf/zipball/5.0.002",
+                "reference": "5.0.002",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "fonts",
+                    "config/lang",
+                    "config",
+                    "2dbarcodes.php",
+                    "barcodes.php",
+                    "htmlcolors.php",
+                    "qrcode.php",
+                    "tcpdf.php",
+                    "unicode_data.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "homepage": "http://nicolaasuni.tecnick.com"
+                },
+                {
+                    "name": "Tristan Maindron",
+                    "email": "tmaindron@gmail.com",
+                    "homepage": "http://www.github.com/tmaindron"
+                }
+            ],
+            "description": "TCPDF is a PHP class for generating PDF documents.",
+            "homepage": "http://www.tcpdf.org/",
+            "keywords": [
+                "TCPDF",
+                "pdf"
+            ],
+            "time": "2012-10-08 10:59:49"
+        },
         {
             "name": "pimple/pimple",
             "version": "dev-master",
@@ -84,43 +193,6 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
-        },
-        {
-            "name": "rev42/tfpdf",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rev42/tfpdf.git",
-                "reference": "v1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rev42/tfpdf/zipball/v1.0",
-                "reference": "v1.0",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "tFPDF": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Ian Back",
-                    "email": "ianb@bpm1.com"
-                }
-            ],
-            "description": "tFPDF",
-            "homepage": "http://fpdf.org/fr/script/script92.php",
-            "keywords": [
-                "pdf"
-            ],
-            "time": "2012-02-24 07:26:11"
         },
         {
             "name": "silex/silex",
@@ -559,7 +631,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "rev42/tfpdf": 20
+        "ensepar/html2pdf": 20
     },
     "platform": [
 
