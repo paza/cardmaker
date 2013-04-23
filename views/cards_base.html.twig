@@ -1,0 +1,92 @@
+<style type="text/css">
+    body {
+        font-family: Helvetica;
+        margin: 0;
+        padding: 0;
+    }
+    .stretch {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    table {
+        width: 100%;
+    }
+
+    .inner {
+        margin: 0 10px 10px 10px;
+    }
+    .number {
+        height: 20px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content {
+        line-height: 1.6;
+    }
+    p {
+        margin: 2px 0;
+    }
+
+    .cropmark td.even {
+        border-left: 1px dotted #CCC;
+    }
+    .cropmark td {
+        border-top: 1px dotted #CCC;
+    }
+    .cropmark tr.first td {
+        border-top: none;
+    }
+
+    .alignLeft .inner .content {
+        text-align: left;
+    }
+    .alignCenter .inner .content {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    {% block specialCSS %}
+    {% endblock specialCSS %}
+
+    .number {
+        text-align: right;
+    }
+</style>
+
+{% for page in pages %}
+<page pageset="old">
+    <nobreak>
+        <div class="stretch {% if alignment is sameas("L") %}alignLeft{% else %}alignCenter{% endif %}{% if cropmark is sameas(true) %} cropmark{% endif %}">
+            <table cellpadding="0" cellspacing="0">
+                {% for row in page %}
+                <tr{% if loop.index is sameas(1) %} class="first"{% endif %}>
+                    {% for card in row %}
+                    <td class="{{ cycle(["even", "odd"], loop.index) }}">
+                        <div class="inner">
+                            <div class="number">
+                                {% if showNumbers is sameas(true) %}
+                                    {{card.number}}
+                                {% endif %}
+                            </div>
+                            <div class="content">
+                                {% if html is sameas(true) %}
+                                    {{ card.text|raw }}
+                                {% else %}
+                                    <span class="textNoHtml">{{ card.text|nl2br }}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </nobreak>
+</page>
+{% endfor %}
