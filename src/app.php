@@ -30,6 +30,12 @@ $app->register(new TwigServiceProvider(), array(
 
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
+$analytics = '';
+if (file_exists(__DIR__ . '/analytics.html')) {
+    $analytics = file_get_contents(__DIR__ . '/analytics.html');
+}
+$app["twig"]->addGlobal("analytics", $analytics);
+
 /**
  * Front page
  */

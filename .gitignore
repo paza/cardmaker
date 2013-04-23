@@ -2,3 +2,4 @@
 vendor
 composer.phar
 cache
+src/analytics.html
